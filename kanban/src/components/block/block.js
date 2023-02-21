@@ -5,12 +5,14 @@ import FooterBlock from './footer-block/footer-block';
 
 
 
-const Block = (props) =>{
+
+const Block = ({title}) =>{
+
   return(
     <div className="block">
-      <div >
-       {props.title}
-      </div>
+      <div className="header-block">
+        {title}
+        </div>
       <Card></Card>
       <FooterBlock/>
     </div>

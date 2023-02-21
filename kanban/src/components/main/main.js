@@ -1,26 +1,13 @@
-import Block from '../block/block';
-import Card from '../card/card';
+import Block from "../block/block";
 
-import './main.css';
+import "./main.css";
 
+const Main = ({ data }) => {
+  const elements = data.map((item) => {
+    return <Block title={item.title}></Block>;
+  });
 
-const Main = () =>{
-  return(
-    <div className="main d-flex align-items-start ">
-      <Block title="Backlog">
-        <Card></Card>
-      </Block>
-      <Block title="Ready">
-        <Card></Card>
-      </Block>
-      <Block title="Progress">
-        <Card></Card>
-      </Block>
-      <Block title="Finished">
-        <Card></Card>
-      </Block>
-    </div>
-  )
-}
+  return <div className="main d-flex align-items-start ">{elements}</div>;
+};
 
 export default Main;

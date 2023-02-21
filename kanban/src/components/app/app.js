@@ -6,11 +6,17 @@ import Footer from '../footer/footer';
 import './app.css';
 
 function App(){
+  const data = [
+    {title:'Backlog'},
+    {title:'Ready'},
+    {title:'In Progress'},
+    {title:'Finished'},
+  ];
+ 
   return (
     <div className="app">
       <Header/>
-        
-      <Main/>
+      <Main data={data}/>
       <Footer/>
       
 
