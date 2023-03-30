@@ -12,11 +12,19 @@ function App(){
     {title:'In Progress'},
     {title:'Finished'},
   ];
+
+  const task = [
+    {text:'task1'},
+    {text:'task2'},
+
+  ];
+
+ 
  
   return (
     <div className="app">
       <Header/>
-      <Main data={data}/>
+      <Main data={data} task={task}/>
       <Footer/>
       
 

@@ -5,9 +5,7 @@
   padding: 20px;
   background-color: #EBECF0 ;
   border-radius: 5px;
-  /* display: flex; */
-  /* flex-direction: column; */
-  /* justify-content: space-between; */
+
 }
 @media (max-width:768px){
   .block{
